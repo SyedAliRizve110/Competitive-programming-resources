@@ -9,8 +9,8 @@ def search_sqrt(n):
         if mid*mid<=n:
             res = mid
             st = mid+1
-        else: end -= 1
+        else: end = mid-1
     return res
-num = 4
+num = 55
 sqrt = search_sqrt(num)
 print(sqrt)
