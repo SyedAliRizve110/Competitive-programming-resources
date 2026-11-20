@@ -4,7 +4,7 @@ class BinarySearch:
         start = 0
         end = len(arr)-1
         while start <= end:
-            mid = end + (start - end) //2
+            mid = end + (start - end) //2 # for start, end == int_max (optimization)
             
             if arr[mid] == k:
                 return mid
